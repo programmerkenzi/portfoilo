@@ -337,6 +337,12 @@ footer li{
 
 @media (max-width: 768px){
 
+    body>h1{
+        
+        padding-bottom: 25px;
+        
+    }
+
     .iconify{
         margin: 1px 1px;
         height: 30px;
