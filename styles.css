@@ -12,7 +12,7 @@ h1{
 }
 
 h2{
-    margin: 0;
+    margin: 10px;
 }
 
 h3{
@@ -26,7 +26,7 @@ h5{
 
 
 body>h1{
-    background-image: linear-gradient(to right, #4885d634, rgba(86, 150, 175, 0.5));
+    
     padding-top: 50px;
     padding-bottom: 50px;
     text-transform: uppercase;
@@ -130,7 +130,7 @@ body>h1{
 }
 
 @keyframes javascript{
-    to{content:'85%';width: 85%;}
+    to{content:'90%';width: 90%;}
 }
 
 .bar>li.html:after{
@@ -256,38 +256,38 @@ body>h1{
 }
 
 .myproject{
-    font-size: 20px;
+    padding: 50px 50px;
     background-image:linear-gradient(to right, #0459c934, rgba(86, 150, 175, 0.5));
 }
 
 
 
+
 .myproject h2{
     margin-top: 25px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
 .projects{
-    padding: 50px 50px;
-    display: grid;
-    grid-template: 
-    'h h  img img '
-    'h h  img img ';
-    border-bottom: 1px;
-    
+   display: flex;
+   flex-direction: row;
+    margin-bottom: 50px;
+    border-bottom: #222222 1px;
 }
 
 
 .item1{
-    
+    width: 60%;
     margin: 0;
     grid-area: h;
-    justify-self: flex-start;
+  
     
 }
 .item1 p {
     color: darkred;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
     font-size: medium;
 }
 
@@ -298,15 +298,12 @@ body>h1{
 
 
 .item2{
-    width: 50%;
-    margin-top: 10%;
-    margin-right: 5%;
-    grid-area: img;
-    justify-self:center;   
+    width: 40%;
+    justify-items: center;  
 }
 
 .item2>a>img{
-    width: 500px;
+    width: 100%;
     -webkit-filter: drop-shadow(3px 3px 3px #222222);
     filter: drop-shadow(3px 3px 3px #222222); 
     cursor: pointer;
@@ -347,11 +344,6 @@ footer li{
 .footericon:hover{
     color: aqua;
 }
-
-
-
-
-
 
 @media (max-width: 768px){
 
@@ -399,39 +391,38 @@ footer li{
         text-align: left;
          }
     
-    .projects{
-        padding: 2% 2%;
-        border-radius: 0px;
-        grid-template: 
-        'h'
-        'img';
+       
+        .myproject h2{
+            margin-bottom: 10px;
         }
-
-    .item1{
-        margin: 5%;
-        grid-area: h;
-        justify-self: center;
-    }
-    
-
-    .item1>h2,p{
-        text-align: center;
-        margin: 0;
-    }
-    
-    .item2{
-        grid-area: img;
-        justify-content: center;
+        
+        .projects{
+           display: flex;
+           flex-direction: column;
+            margin-bottom: 50px;
+        }
+        
+        
+        .item1{
+            width:100%;
            
-    }
-    
-    .item2>a>img{
-        width: 80%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        justify-self: center;
-    }
+        }
+        .item1 p {
+            font-size: small;
+        }
+        
+        .item1>h2{
+            font-size: medium;
+        }
+        
+        
+        .item2{
+            width: 100%;
+        }
+        
+        .item2>a>img{
+            margin-top: 25px;
+        }
 
     footer{
         padding: 1em;
